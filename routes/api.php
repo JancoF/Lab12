@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Hpps\Controller\HomeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +17,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+    return $request->user();});
+
+Route::get('curso', [CursoContoller::class,'index']);
+Route::get('curso/organizaciones', [CursoContoller::class,'organizaciones']);
+Route::get('curso/inversion', [CursoContoller::class,'inversion']);
+
