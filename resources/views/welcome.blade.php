@@ -6,7 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
-    <title>Cover Template · Bootstrap v5.0</title>
+    <title>Comunitarios </title>
+    <link rel="icon" type="imag/png" href="images/ISOTIPO.png">
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
 
@@ -90,30 +91,31 @@ body {
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
+
+  <body class="d-flex h-100 text-center text-white bg-primary">
     
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <div>
-      <h3 class="float-md-start mb-0">Comunitarios</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#">Organizaciones y emprendimientos</a>
+        <a class="nav-link" href="#">Invesión y Impacto</a>
+        <a class="nav-link" href="#">Asesores y equipo</a>
       </nav>
     </div>
   </header>
 
   <main class="px-3">
-    <h1>Cover your page.</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <h1>Comunitarios Fundación territorial de Puno </h1>
+    <p class="lead">En el Perú desde el año 2020 inicia el movimiento de Fundaciones Territoriales.</p>
     <p class="lead">
       <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
     </p>
   </main>
 
   <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    
+    <p>2023 , by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
   </footer>
 </div>
 
