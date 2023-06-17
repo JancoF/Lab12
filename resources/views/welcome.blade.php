@@ -1,125 +1,287 @@
-<!doctype html>
-<html lang="en" class="h-100">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Comunitarios </title>
-    <link rel="icon" type="imag/png" href="images/ISOTIPO.png">
+<!DOCTYPE html>
+<html lang="es">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
-
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunitarios</title>
+  <link rel="icon" type="image/png" href="images/ISOTIPO.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
- 
-
-    <style>
-        /*
- * Globals
- */
+  <script src="js/script.js"></script>
 
 
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-}
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+
+    }
+
+    h1 {
+      font-size: 3.5em;
+    }
+
+    h2 {
+      font-size: 2.7em;
+    }
+
+    h3 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* menu*/
+
+    nav {
+      background: while;
+      height: 100px;
+      width: 100%;
+
+    }
+
+    .enlace {
+      position: absolute;
+      padding: 20px 50px;
+    }
+
+    nav ul {
+      float: right;
+      margin: 10px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+    }
+
+    nav ul li a {
+      color: #142f43;
+      font-size: 18px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-family: 'Blogger', sans-serif;
+    }
+
+    a.active,
+    li a:hover {
+      background-color: #ffde59;
+      transition: 1s;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    article .fondo {
+      background-image: url('Fondo.mp4');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    div,
+    #presentacion {
+      margin-left: 25px;
+      margin-top: 25px;
 
 
-/*
- * Base structure
- */
+    }
 
-body {
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-}
+    main,
+    div #fomacion {
+      margin-top: 25px;
+      background-color: #142f43;
+    }
 
-.cover-container {
-  max-width: 42em;
-}
+    body main {
+      padding-left: 35px;
+    }
 
-
-/*
- * Header
- */
-
-.nav-masthead .nav-link {
-  padding: .25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
-}
-
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-
-.nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+    @media screen and (max-width: 600px) {
+      .columnas {
+        flex-basis: 100%;
       }
+    }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+    /* Estilos para las columnas */
+    .columnas {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
 
-    
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-  </head>
+    }
 
-  <body class="d-flex h-100 text-center text-white bg-primary">
-    
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link" href="#">Organizaciones y emprendimientos</a>
-        <a class="nav-link" href="#">Invesión y Impacto</a>
-        <a class="nav-link" href="#">Asesores y equipo</a>
-      </nav>
+    .columna {
+      width: calc(33.33% - 20px);
+      padding: 20px;
+      border: 1px solid #ccc;
+      margin: 10px;
+      border-radius: 5px;
+      max-width: 100%;
+    }
+
+
+
+    /* Estilos para los títulos de las columnas */
+    h3 {
+      margin-top: 0;
+    }
+
+    /* Estilos para las listas */
+    ul,
+    ol {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+
+    /* main,
+    article*/
+    .presentacion {
+      background-color: #142f43;
+      /* color de respaldos */
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <img src="images/LOGO-COMUNIT.png" width="20%" height="20%" alt="logo">
+    <ul>
+      <li><a href="#presentacion">EmprendimientoS</a></li>
+      <li><a href="#formacion">Inversión y impacto</a></li>
+      <li><a href="#col1">Acesores y equipo</a></li>
+
+    </ul>
+  </nav>
+
+  <article class="fondo">
+    <video src="images/Puno.mp4" autoplay playinline loop muted preload="auto" width="100%" height="100%"></video>
+  </article>
+
+  <div style="color: #ff5757;" >
+    <h2>Instituciones y aliados </h2>
+  </div>
+  <main>
+    <div id="formacion">
+      <table class="tabla">
+
+        <tbody>
+          <tr>
+            <td><img src="images/Respaldos/Imagen1.png" alt="Imagen 1"></td>
+            <td><img src="images/Respaldos/Imagen2.png" alt="Imagen 2"></td>
+            <td><img src="images/Respaldos/Imagen3.png" alt="Imagen 2"></td>
+            <td><img src="images/Respaldos/Imagen4.png" alt="Imagen 2"></td>
+
+
+          </tr>
+          <tr>
+            <td><img src="images/Respaldos/Imagen5.png" alt="Imagen 2"></td>
+            <td><img src="images/Respaldos/Imagen6.png" alt="Imagen 2"></td>
+            <td><img src="images/Respaldos/Imagen7.png" alt="Imagen 2"></td>
+            <td><img src="images/Respaldos/Imagen8.png" alt="Imagen 2"></td>
+
+
+          </tr>
+  
+        </tbody>
+      </table>
+
     </div>
-  </header>
-
-  <main class="px-3">
-    <h1>Comunitarios Fundación territorial de Puno </h1>
-    <p class="lead">En el Perú desde el año 2020 inicia el movimiento de Fundaciones Territoriales.</p>
-    <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-    </p>
   </main>
 
-  <footer class="mt-auto text-white-50">
-    
-    <p>2023 , by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-  </footer>
-</div>
 
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+    }
 
+    /* Estilos de la tabla */
+    .tabla {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .tabla th,
+    .tabla td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    /* Estilos responsivos */
+    @media (max-width: 600px) {
+      .tabla {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .tabla th,
+      .tabla td {
+        white-space: normal;
+        text-align: center;
+      }
+    }
+
+    /*
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }*/
+  </style>
+<div style="color: #ff5757;" >
+    <h2> Logros </h2>
+    <img src="images/Logros.png" alt="">
+  </div>
+
+  <div style="color: #142f43;" >
+  <p>Redes sosciales</p>
+    <div>
+      <tr>
+        <td><a href="https://www.facebook.com/comunitarios.ft"><i class="fab fa-facebook"></i> </a></td>
+        <td><a href="https://www.instagram.com/comunitarios.ft"><i class="fab fa-instagram"></i> </a></td>
+        <td><a href="https://www.linkedin.com/company/comunitarios"><i class="fab fa-linkedin"></i></a></td>
+      </tr>
+    </div>
+  </div>
     
-  </body>
+
+  
+
+</body>
+
 </html>
